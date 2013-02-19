@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="Marca">
+        <item >410</item>
+        <item >ADIDAS</item>
+        <item>AGATHAR</item>
+        <item>ANDRIOTI</item>
+        <item >ARIZO.JR</item>
+        <item >ARIZONA</item>
+        <item>ARNETTE</item>
+        <item>BARBE</item>
+        <item>BESPONJA</item>
+        <item>BLUEBAY</item>
+        <item>BULGARI</item>
+        <item>BURBERRY</item>
+        <item>C.DIOR</item>
+        <item>CAC</item>
+        <item>CACHAREL</item>
+        <item>CARRERA</item>
+        <item>CATERPIL</item>
+        <item>CEBE</item>
+        <item>CHAGALL</item>
+        <item>CHANEL</item>
+        <item>CHAPS</item>
+        <item>CHERRERA</item>
+        <item>CHEVIGNO</item>
+        <item >CHIPIE</item>
+        <item>CHUPS</item>
+        <item>COLUMBIA</item>
+        <item>CV.PARIS</item>
+        <item>CZV</item>
+        <item>CZV-P</item>
+        <item>D.IMAGE</item>
+        <item>DG</item>
+        <item>DGABBANA</item>
+        <item>DIESEL</item>
+        <item >DISNEY</item>
+        <item>DOCKERS</item>
+        <item>E.ARMANI</item>
+        <item>ECKO</item>
+        <item>ESPIRT</item>
+        <item>FERRATI</item>
+        <item>FOSSIL</item>
+        <item>FROG</item>
+        <item>FUTURE-X</item>
+        <item>G.ARMANI</item>
+        <item>GAME</item>
+        <item>GF.FERRE</item>
+        <item>GLOW</item>
+        <item>GUCCI</item>
+        <item>H.BOSS</item>
+        <item>HKITTY</item>
+        <item>J.DESIGN</item>
+        <item>J.JOVENE</item>
+        <item>J.KIDS</item>
+        <item>J.TITANI</item>
+        <item >JACK</item>
+        <item>JACK_ACT</item>
+        <item>JACK_FLX</item>
+        <item>JACK_PAT</item>
+        <item>JACK_W</item>
+        <item >JAGUAR</item>
+        <item >JEEP</item>
+        <item >JLAFOND</item>
+        <item >JMARCEL</item>
+        <item >JP</item>
+        <item >JPREMIUN</item>
+        <item >KENZO</item>
+        <item >KIPLING</item>
+        <item >KUBO</item>
+        <item >LACOSTE</item>
+        <item >LAMY</item>
+        <item >LANVIN</item>
+        <item >LIGHTOUC</item>
+		<item >LTUNES</item>
+		<item >M.POCKET</item>
+		<item >MADONNA</item>
+		<item >MAX-MARA</item>
+		<item >METANO</item>
+		<item >MGM</item>
+		<item >MIRAFLEX</item>
+		<item >MJEAN</item>
+		<item >MMJACOBS</item>
+		<item >MONSIEUR</item>
+		<item >MUESTRA</item>
+		<item >N.RICCI</item>
+		<item >NCV</item>
+		<item >OAKLEY</item>
+		<item >ONLINE</item>
+		<item >ORBIS</item>
+		<item >ORIGINAL</item>
+		<item >OXYDO</item>
+		<item >P.CARDIN</item>
+		<item >PAOBELLE</item>
+        <item >PERSOL</item>
+        <item >POLO</item>
+        <item >POLO PH</item>
+        <item >PORSCHE</item>
+        <item >PRABANNE</item>
+        <item >PRADA</item>
+        <item >PUMA</item>
+        <item >PUREL</item>
+        <item >RALPH L</item>
+        <item >JACK</item>
+        <item >RAY-BAN</item>
+        <item >RB JR</item>
+        <item >RENREGIS</item>
+        <item >SAFILO</item>
+        <item >SEIKO</item>
+        <item >SILHOUET</item>
+        <item >SWAROVSK</item>
+        <item >TAGHEUER</item>
+        <item >THILFIGE</item>
+        <item >TOM FORD</item>
+        <item >TOUCH</item>
+        <item >VALENTIN</item>
+        <item >VERSACE</item>
+        <item >VOGUE</item>
+        <item >YSL</item>
+        <item >ZEGNA</item>
+        
+        
+    </string-array>
+        <string-array name="Diseno">
+            <item >REDONDO</item>
+            <item >CUADRADO</item>
+            <item >RECTANGU</item>
+            <item >PILOTO</item>
+            <item >OVALADO</item>
+        </string-array>
+        <string-array name="Colores">
+            <item >Rosado</item>
+            <item >Rojo</item>
+            <item >Negro</item>
+            <item >Azul</item>
+            <item >Gris</item>
+            <item >Morado</item>
+        </string-array>
+        <string-array name="Calidad">
+            <item >Alta</item>
+            <item >Media</item>
+            <item >Baja</item>
+        </string-array>
+        <string-array name="Material">
+            <item >ACETATO</item>
+            <item >METALICO</item>
+            <item >MINER</item>
+            <item >ORGAN</item>
+            <item >PLASTICO</item>
+            <item >POLYC</item>
+        </string-array>
+        <string-array name="Enfermedades">
+            <item >Miopia</item>
+            <item >Hipermetropia</item>
+            <item >Presbicia</item>
+            <item >Astigmatismo</item>
+        </string-array>
+        <string-array name="Dioptria">
+            <item >-12.00</item>
+            <item >-11.75</item>
+            <item >-11.50</item>
+            <item >-11.25</item>
+            <item >-11.00</item>
+            <item >-10.75</item>
+            <item >-10.50</item>
+            <item >-10.25</item>
+            <item >-10.00</item>
+            <item >-9.75</item>
+            <item >-9.50</item>
+            <item >-9.25</item>
+            <item >-9.00</item>
+            <item >-8.75</item>
+            <item >-8.50</item>
+            <item >-8.25</item>
+            <item >-8.00</item>
+            <item >-7.75</item>
+            <item >-7.50</item>
+            <item >-7.25</item>
+            <item >-7.00</item>
+            <item >-6.75</item>
+            <item >-6.50</item>
+            <item >-6.25</item>
+            <item >-6.00</item>
+            <item >-5.75</item>
+            <item >-5.50</item>
+            <item >-5.25</item>
+            <item >-5.00</item>
+            <item >-4.75</item>
+            <item >-4.50</item>
+            <item >-4.25</item>
+            <item >-4.00</item>
+            <item >-3.75</item>
+            <item >-3.50</item>
+            <item >-3.25</item>
+            <item >-3.00</item>
+            <item >-2.75</item>
+            <item >-2.50</item>
+            <item >-2.25</item>
+            <item >-2.00</item>
+            <item >-1.75</item>
+            <item >-1.50</item>
+            <item >-1.25</item>
+            <item >-1.00</item>
+            <item >-0.75</item>
+            <item >-0.50</item>
+            <item >-0.25</item>
+            <item >0.00</item>
+            <item >0.25</item>
+            <item >0.50</item>
+  			<item >0.75</item>
+   			<item >1.00</item>
+  			<item >1.25</item>
+   			<item >1.50</item>
+   		    <item >1.75</item>
+   			            <item >2.00</item>
+   		    			            <item >2.25</item>
+   			                        <item >2.50</item>
+   		    			                        <item >2.75</item>
+   			                                    <item >3.00</item>
+   		    			                        
+   			                        
+  			            
+            <item >3.25</item>
+            <item >3.50</item>
+            <item >3.75</item>
+            <item >4.00</item>
+            <item >4.25</item>
+            <item >4.50</item>
+            <item >4.75</item>
+            <item >5.00</item>
+            <item >5.25</item>
+            <item >5.50</item>
+            <item >5.75</item>
+            <item >6.00</item>
+            <item >6.25</item>
+            <item >6.50</item>
+            <item >6.75</item>
+            <item >7.00</item>
+            <item >7.25</item>
+            <item >7.50</item>
+            <item >7.75</item>
+            <item >8.00</item>
+            <item >8.25</item>
+            <item >8.50</item>
+            <item >8.75</item>
+            <item >9.00</item>
+            <item >9.25</item>
+                        <item >9.50</item>
+            
+                        <item >9.75</item>
+            
+                        <item >10.00</item>
+            
+                        <item >10.25</item>
+            
+            			     <item >10.50</item>
+            
+                        <item >10.75</item>
+            
+                        <item >11.00</item>
+            
+                        <item >11.25</item>
+            
+                        <item >11.50</item>
+            
+ 
+                    <item >11.75</item>
+                      <item >12.00</item>
+        </string-array>
+        <string-array name="Grados">
+            <item >0</item>
+            <item >5</item>
+            <item >10</item>
+            <item >15</item>
+            <item >20</item>
+            <item >25</item>
+            <item >30</item>
+            <item >35</item>
+            <item >40</item>
+            <item >45</item>
+            <item >50</item>
+            <item >55</item>
+            
+            <item >60</item>
+            <item >65</item>
+            <item >70</item>
+            <item >75</item>
+            <item >80</item>
+            <item >85</item>
+            <item >90</item>
+            <item >95</item>
+            <item >100</item>
+            <item >105</item>
+            <item >110</item>
+            <item >115</item>
+            <item >120</item>
+            <item >125</item>
+            <item >130</item>
+            <item >135</item>
+            <item >140</item>
+            <item >145</item>
+            <item >150</item>
+                        <item >155</item>
+            
+            <item >160</item>
+            <item >165</item>
+            <item >170</item>
+            <item >175</item>
+            <item >180</item>
+
+        </string-array>
+        
+        <string-array name="Miopia">
+        <item >La miopia es un error refractivo, lo que significa que el ojo no refracta la luz adecuadamente para ver las imagenes con claridad, cuando existe una miopia los objetos cercanos se ven claramente, pero los distantes se ven borrosos</item>
+        <item >Los haces de luz que ingresan al ojo forman foco por delante de la retina</item>
+        <item >-Fruncir el ceño para enfocar\n
+            -Dolor de cabeza\n
+            -Tensión ocular</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Hipermetropia">
+        <item >Un hipermétrope en principio ve mejor de lejos que de cerca. Los hipermétropes pueden enfocar objetos situados a distancias más o menos importantes haciendo un esfuerzo.
+Tienen más dificultades para un enfoque nítido de objetos situados a una distancia cercana ya que en este caso la acomodación a realizar es demasiado grande.
+            
+        </item>
+        <item >Los haces de luz que ingresan al ojo forman foco por atrás de la retina</item>
+        <item >-Problemas para ver objetos próximos\n
+            -Dolor de cabeza\n
+            -Tensión ocular</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Astigmatismo">
+        <item >El astigmatismo es un defecto de la curvatura de la córnea (y/o del cristalino) que actúa siguiendo un eje horizontal, vertical u oblicuo, y altera la visión.\n Esta ametropía está por lo general presente desde el nacimiento y puede sumarse a una miopía o una hipermetropía.</item>
+        <item >Los haces de luz que ingresan al ojo forman mas de un foco</item>
+        <item >-Vision de lineas verticales y horizontales distorsionadas\n
+            -Dolor de cabeza</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Presbicia">
+        <item >Dificultad para enfocar objetos cercanos, por lo que el individuo tiende a aumentar la distancia entre el objeto y los ojos.\n Un gesto muy característico de la persona que padece de vista cansada, al leer es extender los brazos para separar la lectura de los ojos hasta una distancia que le permita distinguir las letras con mayor nitidez.</item>
+        <item >Perdida de flexibilidad del cristalino lo que provoca problemas de enfoque en visión proxima</item>
+        <item >-Necesidad de mayor luminosidad para leer\n
+            -Estiramiento de los brazos para enfocar</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+        
+</resources>

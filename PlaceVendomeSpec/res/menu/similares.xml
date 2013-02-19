@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+
+    <item
+        android:id="@+id/similares"
+        android:showAsAction="withText|always"
+        android:title="Buscar Similares"/>
+    
+    <item
+        android:id="@+id/voucher"
+        android:showAsAction="withText|always"
+        android:title="Imprimir Voucher"/>
+    
+    <item
+        android:id="@+id/carro"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/carrito"/>
+    
+    
+    
+</menu>

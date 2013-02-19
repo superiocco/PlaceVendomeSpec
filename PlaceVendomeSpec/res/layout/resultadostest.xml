@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C2C2C2"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/fondo_scroller"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp" >
+
+        <ScrollView
+            android:id="@+id/ScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="700dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="25dp"
+            android:background="#000000"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="450dp"
+                android:layout_height="812dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#000000"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/loadingBar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="300dp"
+                     />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:layout_alignParentRight="true" >
+
+        <SlidingDrawer
+            android:id="@+id/drawer3"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:content="@+id/bluecontent"
+            android:handle="@+id/handle3"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:id="@+id/bluecontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000" >
+
+                <LinearLayout
+                    android:id="@+id/content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/handle3"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/budget_blue_rotate" />
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/drawer"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            android:content="@+id/yellowcontent"
+            android:handle="@+id/handle"
+            android:orientation="horizontal" >
+
+            <HorizontalScrollView
+                android:id="@+id/yellowcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000" >
+
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/handle"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/budget_yellow_rotate"
+                android:adjustViewBounds="true"
+                 />
+        </SlidingDrawer>
+
+        <SlidingDrawer
+            android:id="@+id/drawer2"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_gravity="bottom"
+            android:content="@+id/greencontent"
+            android:handle="@+id/handle2" 
+            android:orientation="horizontal"
+            >
+
+            <HorizontalScrollView
+                android:id="@+id/greencontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000" >
+
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <ImageView
+                android:id="@+id/handle2"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:src="@drawable/budget_pink_rotate"
+                android:adjustViewBounds="true" />
+        </SlidingDrawer>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/logovertical"
+        android:adjustViewBounds="true" />
+
+</RelativeLayout>

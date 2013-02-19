@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C2C2C2"
+     >
+
+            <LinearLayout
+                        android:id="@+id/container"
+            
+                android:layout_width="fill_parent"
+                android:layout_height="375dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/fondo_scroller" >
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                  	android:layout_marginLeft="20dp"
+                  	android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="#FFFFFF"
+                    android:scrollbars="none" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+                    
+                      <ProgressBar 
+                        android:id="@+id/loadingBar"
+                        android:layout_width="fill_parent"
+                    	android:layout_height="fill_parent"
+                    	android:layout_marginLeft="430dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+                
+            </LinearLayout>
+            
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/imageView1"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp">
+
+    <SlidingDrawer
+        android:id="@+id/drawer2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:content="@+id/greencontent"
+        android:handle="@+id/handle2" >
+
+        <ScrollView
+            android:id="@+id/greencontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000" >
+
+            <LinearLayout
+                android:id="@+id/content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/handle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/budget_pink" />
+    </SlidingDrawer>
+
+            <SlidingDrawer
+                    
+                    android:id="@+id/drawer"
+     				android:layout_width="300dp"
+     				android:layout_height="300dp"
+     				android:layout_gravity="bottom"
+     				android:handle="@+id/handle"
+     				android:content="@+id/yellowcontent"
+     				 >
+                <ScrollView
+                   android:id="@+id/yellowcontent"
+                   android:layout_height="wrap_content"
+				   android:layout_width="wrap_content"
+				   android:background="#000000">
+                <LinearLayout
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:orientation="vertical">
+                </LinearLayout>
+                </ScrollView>
+                    
+                <ImageView 
+                    android:id="@+id/handle"
+                    android:src="@drawable/budget_yellow"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"/>
+            </SlidingDrawer>
+                 <SlidingDrawer
+                    
+                    android:id="@+id/drawer3"
+     				android:layout_width="300dp"
+     				android:layout_height="300dp"
+     				android:handle="@+id/handle3"
+     				android:content="@+id/bluecontent"
+     				android:layout_gravity="bottom"
+     				 >
+                
+               <ScrollView
+                   android:layout_height="wrap_content"
+				   android:layout_width="wrap_content"
+				   android:id="@+id/bluecontent"
+				    android:background="#000000">
+                   
+"
+                <LinearLayout
+                    android:id="@+id/content3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#000000"
+                    android:orientation="vertical">
+                </LinearLayout>
+                </ScrollView>
+                <ImageView 
+                    android:id="@+id/handle3"
+                    android:src="@drawable/budget_blue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"/>
+                
+            </SlidingDrawer>
+</LinearLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/logo_bottom" />
+            
+    
+</RelativeLayout>

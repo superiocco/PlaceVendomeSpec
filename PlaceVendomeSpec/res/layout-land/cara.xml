@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/face"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="landscape"
+    tools:context=".CaraActivity" >
+
+    <ImageView
+        android1:id="@+id/imageView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentBottom="true"
+        android1:layout_alignParentRight="true"
+        android1:src="@drawable/logo_bottom" />
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_above="@+id/imageView1"
+        android1:layout_alignParentRight="true"
+        android1:layout_marginBottom="16dp"
+        android1:layout_marginRight="47dp"
+        android1:text="Saltar" />
+
+    <TextView
+        android1:id="@+id/cara"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginLeft="133dp"
+        android1:layout_marginTop="16dp"
+        android1:text="@string/formacara"
+        android1:textSize="24sp" />
+
+    <LinearLayout
+        android1:id="@+id/linearLayout2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_below="@+id/cara"
+        android1:layout_centerHorizontal="true"
+        android1:layout_marginTop="73dp" >
+
+        <Button
+            android1:id="@+id/cuadrada"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_below="@+id/diamante"
+            android1:layout_marginRight="50dp"
+            android1:layout_toLeftOf="@+id/cara"
+            android1:background="#000000"
+            android1:drawableTop="@drawable/faceshapesquare"
+            android1:text="Cuadrada"
+            android1:textColor="#FFFFFF" />
+
+        <Button
+            android1:id="@+id/redonda"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_marginRight="50dp"
+            android1:background="#000000"
+            android1:drawableTop="@drawable/faceshaperound"
+            android1:text="Redonda"
+            android1:textColor="#FFFFFF" />
+
+        <Button
+            android1:id="@+id/corazon"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_marginRight="50dp"
+            android1:background="#000000"
+            android1:drawableTop="@drawable/faceshapeheart"
+            android1:text="Corazon"
+            android1:textColor="#FFFFFF" />
+
+        <Button
+            android1:id="@+id/ovalada"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_marginRight="50dp"
+            android1:background="#000000"
+            android1:drawableTop="@drawable/faceshapeoval"
+            android1:text="Ovalada"
+            android1:textColor="#FFFFFF" />
+
+        <Button
+            android1:id="@+id/rectangular"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:background="#000000"
+            android1:drawableTop="@drawable/faceshaperectangular"
+            android1:text="Rectangular"
+            android1:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

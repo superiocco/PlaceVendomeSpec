@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Seleccione Grupo Etareo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logovertical"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/Nino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:drawableTop="@drawable/nino"
+            android:text="Niño"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/adultoJoven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="60dp"
+            android:background="#000000"
+            android:drawableTop="@drawable/adultojoven"
+            android:text="Adulto Joven"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/adultoMayor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="#000000"
+            android:drawableTop="@drawable/adultomayor"
+            android:text="Adulto Mayor"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_scroller"
+    android:id="@+id/preview"> 
+
+       <LinearLayout
+           android:id="@+id/grid"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_below="@+id/imagenProducto"
+           android:orientation="horizontal" >
+
+           <LinearLayout
+               android:id="@+id/specs"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="19dp"
+               android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/marcaProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="51dp"
+                   android:layout_marginTop="29dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+
+               <TextView
+                   android:id="@+id/materialProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="51dp"
+                   android:layout_marginTop="29dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+
+               <TextView
+                   android:id="@+id/formaProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="51dp"
+                   android:layout_marginTop="29dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+
+               <TextView
+                   android:id="@+id/colorProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="51dp"
+                   android:layout_marginTop="29dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+               
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/specs2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="51dp"
+               android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/precioProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="51dp"
+                   android:layout_marginTop="29dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+		<LinearLayout
+		    android:id="@+id/linearStock"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="29dp"
+		     >
+               <TextView
+                   android:id="@+id/stockProducto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginLeft="51dp"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="#000000" />
+         </LinearLayout>   
+         		<LinearLayout
+		    android:id="@+id/linearMedidas"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_marginTop="29dp"
+		     >   
+		           <TextView
+		            android:id="@+id/medidas"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="15dp"
+		            android:layout_marginLeft="51dp"
+		            android:textColor="#000000"
+		            android:textSize="20sp"
+		            android:text="Ver Medidas"/>
+		           
+		</LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="27dp"
+    android:layout_marginLeft="18dp"
+    android:src="@drawable/logo_opvtrans" />
+
+<LinearLayout
+    android:id="@+id/carasC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/imageView1"
+    android:layout_below="@+id/grid"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="75dp"
+    android:layout_marginLeft="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/carasUtiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ideal Para las Caras"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/carasCompatibles"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/imagenProducto"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/nombreProducto" >
+    </LinearLayout>
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/imagenProducto"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="33dp"
+    android:layout_marginLeft="30dp"
+    android:adjustViewBounds="true"
+    android:src="@drawable/opticageneral" />
+
+<TextView
+    android:id="@+id/nombreProducto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/imagenProducto"
+    android:layout_marginTop="58dp"
+    android:layout_toRightOf="@+id/imagenProducto"
+    android:text="Name of the Model"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="#000000" />
+
+</RelativeLayout>

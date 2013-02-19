@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Miopia">
+        <item >La miopia es un error refractivo, lo que significa que el ojo no refracta la luz adecuadamente para ver las imagenes con claridad, cuando existe una miopia los objetos cercanos se ven claramente, pero los distantes se ven borrosos</item>
+        <item >Los haces de luz que ingresan al ojo forman foco por delante de la retina</item>
+        <item >-Fruncir el ceño para enfocar\n
+            -Dolor de cabeza\n
+            -Tensión ocular</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Hipermetropia">
+        <item >Un hipermétrope en principio ve mejor de lejos que de cerca. Los hipermétropes pueden enfocar objetos situados a distancias más o menos importantes haciendo un esfuerzo.
+Tienen más dificultades para un enfoque nítido de objetos situados a una distancia cercana ya que en este caso la acomodación a realizar es demasiado grande.
+            
+        </item>
+        <item >Los haces de luz que ingresan al ojo forman foco por atrás de la retina</item>
+        <item >-Problemas para ver objetos próximos\n
+            -Dolor de cabeza\n
+            -Tensión ocular</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Astigmatismo">
+        <item >El astigmatismo es un defecto de la curvatura de la córnea (y/o del cristalino) que actúa siguiendo un eje horizontal, vertical u oblicuo, y altera la visión. Esta ametropía está por lo general presente desde el nacimiento y puede sumarse a una miopía o una hipermetropía.</item>
+        <item >Los haces de luz que ingresan al ojo forman mas de un foco</item>
+        <item >-Vision de lineas verticales y horizontales distorsionadas\n
+            -Dolor de cabeza</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    <string-array name="Presbicia">
+        <item >Dificultad para enfocar objetos cercanos, por lo que el individuo tiende a aumentar la distancia entre el objeto y los ojos. Un gesto muy característico del presbita (persona que padece de vista cansada) al leer es extender los brazos para separar la lectura de los ojos hasta una distancia que le permita distinguir las letras con mayor nitidez..</item>
+        <item >Perdida de flexibilidad del cristalino lo que provoca problemas de enfoque en visión proxima</item>
+        <item >-Necesidad de mayor luminosidad para leer\n
+            -Estiramiento de los brazos para enfocar</item>
+        <item >foto</item>
+        <item >ojo</item>
+    </string-array>
+    
+</resources>

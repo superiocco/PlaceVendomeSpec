@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/carac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="@string/Caracteristicas"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logovertical" 
+        android:adjustViewBounds="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="111dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/Color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Diseno"
+            android:layout_alignLeft="@+id/textView1"
+            android:src="@drawable/color"
+            android:layout_marginRight="50dp" />
+
+        <ImageButton
+            android:id="@+id/Diseno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:src="@drawable/diseno" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/siguiente" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginBottom="159dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/Material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Diseno"
+            android:layout_alignTop="@+id/Marca"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/material" />
+
+        <ImageButton
+            android:id="@+id/Marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Color"
+            android:layout_toLeftOf="@+id/Diseno"
+            android:src="@drawable/marca" />
+    </LinearLayout>
+
+</RelativeLayout>

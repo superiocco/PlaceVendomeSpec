@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ScrollView
+        android:id="@+id/horizontalScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <HorizontalScrollView
+            android:id="@+id/verticalScroll"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/grid"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:background="@drawable/fondo_scroller">
+                
+            <LinearLayout 
+            android:id="@+id/skus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            >
+                
+               <TextView 
+                   android:id="@+id/sku"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="SKU:"
+                   android:textSize="22sp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"
+                   /> 
+                
+            </LinearLayout>
+            <LinearLayout 
+            android:id="@+id/items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/item"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Item:"
+                   android:textSize="22sp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"
+                   /> 
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+            android:id="@+id/fotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/foto"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Foto:"
+                   android:textSize="22sp"
+                   android:gravity="center_vertical"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"
+                   /> 
+                
+            </LinearLayout>
+            
+          <LinearLayout 
+            android:id="@+id/marcas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/marca"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Marca:"
+                   android:textSize="22sp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"
+                   /> 
+                
+            </LinearLayout>
+            
+           <LinearLayout 
+            android:id="@+id/precios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/precio"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Precio:"
+                   android:textSize="22sp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"/> 
+                
+            </LinearLayout>
+            
+           
+         <LinearLayout 
+            android:id="@+id/formas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/forma"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Forma:"
+                   android:textSize="22sp"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"/> 
+                
+            </LinearLayout>
+            
+		<LinearLayout 
+            android:id="@+id/medidas"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp">
+                
+               <TextView 
+                   android:id="@+id/medida"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Medidas:"
+                   android:textSize="22sp"
+                   android:gravity="center_vertical"
+                   android:layout_marginRight="30dp"
+                   android:layout_marginLeft="20dp"/> 
+                   
+                
+            </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        
+        
+    </ScrollView>
+    
+</RelativeLayout>

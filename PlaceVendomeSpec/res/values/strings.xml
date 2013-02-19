@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Place Vendome</string>
+    <string name="diagnostico">¿Cuál es tu Diagnóstico?</string>
+    <string name="problema">Elija el actual problema que tiene o que lo recetaron</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Oferta">Oferta</string>
+    <string name="Tienda">Tienda</string>
+    <string name="Online">Online</string>
+    <string-array name="TabNames">
+        <item >Ofertas</item>
+        <item >Productos</item>
+        <item >Online</item>
+    </string-array>
+    <string name="formacara">¿Como es la forma de tu cara?</string>
+    <string name="Precio_Maximo">250000</string>
+    <string name="Caracteristicas">¿Que Características Busca?</string>
+    <string name="MAXPRICE">Precio Máximo</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="Si">Si</string>
+    <string name="No">No</string>
+    <string name="backGroundColor">#C0C0C0</string>
+    <string name="miopia">Miopia</string>
+    <string name="hipermetropia">Hipermetropia</string>
+    <string name="astigmatismo">Astigmatismo</string>
+    <string name="presbicia">Presbicia</string>
+    <string name="Presupesto">¿Tiene un presupuesto?</string>
+
+
+</resources>

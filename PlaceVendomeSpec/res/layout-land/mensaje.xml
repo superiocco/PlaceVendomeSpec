@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mensaje"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" 
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="OK"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+         />
+    
+        <Button
+        android:id="@+id/ayuda"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:text="Ayuda"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    
+
+</RelativeLayout>

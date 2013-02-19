@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+<LinearLayout
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true">    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="100dp">
+        
+        <Button 
+            android:id="@+id/cristales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cristales"
+            android:drawableTop="@drawable/cristales"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            />
+        
+                <Button 
+            android:id="@+id/dioptrias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dioptrías"
+            android:drawableTop="@drawable/dioptrias"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+                
+            <Button 
+            android:id="@+id/marcos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcos"
+            android:drawableTop="@drawable/marcos"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+            
+            <Button 
+            android:id="@+id/caras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caras"
+            android:drawableTop="@drawable/caras"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>   
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="wrap_content">
+            
+            <Button 
+            android:id="@+id/marcas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marcas"
+            android:drawableTop="@drawable/marcas"
+            android:background="#000000"
+            android:textColor="#FFFFFF"/>
+        
+                <Button 
+            android:id="@+id/placeVendome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Vendome"
+            android:drawableTop="@drawable/placevendome"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+                
+            <Button 
+            android:id="@+id/garantias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garantías"
+            android:drawableTop="@drawable/garantias"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>
+            
+            <Button 
+            android:id="@+id/herramientas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Herramientas"
+            android:drawableTop="@drawable/herramientas"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"/>   
+        
+        
+    </LinearLayout>
+
+    
+    
+</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/logovertical"
+        android:adjustViewBounds="true" />
+    
+    
+    
+
+</RelativeLayout>

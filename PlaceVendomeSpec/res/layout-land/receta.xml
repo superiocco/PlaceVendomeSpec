@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText" >
+
+    
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo_bottom" />
+
+		<ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="400dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:adjustViewBounds="true"
+		    android:layout_below="@+id/titulo"
+		    android:layout_marginLeft="32dp"
+		    android:src="@drawable/ojos" />
+
+		<TextView
+		    android:id="@+id/enfermedad"
+		    android:layout_width="350dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignTop="@+id/info"
+		    android:layout_toRightOf="@+id/pres"
+		    android:text="Enfermedad: Ninguna"
+		    android:textColor="#FFFFFF"
+		    android:textSize="24sp" />
+
+		<Button
+		    android:id="@+id/guardarReceta"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_above="@+id/imageView1"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginBottom="19dp"
+		    android:layout_marginRight="42dp"
+		    android:text="Ok" />
+
+		<LinearLayout
+		    android:id="@+id/pres"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/guardarReceta"
+		    android:layout_alignLeft="@+id/imageView2"
+		    android:orientation="vertical" >
+
+		    <LinearLayout
+		        android:id="@+id/titulos"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/titulo"
+		        android:layout_below="@+id/titulo"
+		        android:layout_marginTop="19dp" >
+
+		        <TextView
+		            android:id="@+id/esfera"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="70dp"
+		            android:layout_marginRight="20dp"
+		            android:text="Esfera"
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/cilindro"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:text="Cilindro"
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/eje"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="40dp"
+		            android:text="Eje"
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/adicion"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Adicion"
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/ojoDerecho"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="30dp" >
+
+		        <TextView
+		            android:id="@+id/derecho"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="20dp"
+		            android:text="O.D."
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/esferaDerecha"
+		            android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/cilindroDerecho"
+					android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/ejeDerecho"
+		            android:layout_width="50dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/adicionDerecho"
+		            android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/ojoIzquierdo"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="30dp" >
+
+		        <TextView
+		            android:id="@+id/izquierdo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="31dp"
+		            android:text="O.I."
+		            android:textColor="#FFFFFF"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/esferaIzquierda"
+		            android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/cilindroIzquierdo"
+		            android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/ejeIzquierdo"
+		            android:layout_width="50dp"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="30dp"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+
+		        <TextView
+		            android:id="@+id/adicionIzquierdo"
+		            android:layout_width="70dp"
+		            android:layout_height="wrap_content"
+		            android:background="#FFFFFF"
+		            android:text="0.0"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+		    </LinearLayout>
+
+		    <LinearLayout
+		        android:id="@+id/distancia"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="290dp"
+		        android:layout_marginTop="30dp" >
+
+		        <TextView
+		            android:id="@+id/dp"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginRight="40dp"
+		            android:text="DP"
+		            android:textColor="#FFFFFF"
+		            android:textSize="20sp" />
+
+		        <TextView
+		            android:id="@+id/distanciaPupilar"
+		            android:layout_width="60dp"
+		            android:layout_height="wrap_content"
+		            android:background="#FFFFFF"
+		            android:text="60"
+		            android:textColor="#000000"
+		            android:textSize="24sp" />
+		    </LinearLayout>
+		</LinearLayout>
+
+		<TextView
+		    android:id="@+id/titulo"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/imageView2"
+		    android:layout_alignParentTop="true"
+		    android:text="Ingrese La Receta"
+		    android:textColor="#FFFFFF"
+		    android:textSize="24sp" />
+
+		<ImageButton
+		    android:id="@+id/info"
+		    android:layout_width="50dp"
+		    android:layout_height="50dp"
+		    android:layout_alignRight="@+id/guardarReceta"
+		    android:layout_alignTop="@+id/imageView2"
+		    android:layout_marginTop="17dp"
+		    android:src="@drawable/botoninfo" />
+	
+</RelativeLayout>

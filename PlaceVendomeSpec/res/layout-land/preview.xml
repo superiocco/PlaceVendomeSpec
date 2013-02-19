@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_scroller"
+    android:orientation="vertical"
+    android:id="@+id/preview" >
+
+    <TextView
+        android:id="@+id/nombreProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imagenProducto"
+        android:layout_below="@+id/imagenProducto"
+        android:layout_marginLeft="165dp"
+        android:text="Name of the Model"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+<ImageView
+    android:id="@+id/imagenProducto"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:layout_alignLeft="@+id/imageView1"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="21dp"
+    android:adjustViewBounds="true"
+    android:src="@drawable/opticageneral" />
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="18dp"
+    android:adjustViewBounds="true"
+    android:src="@drawable/logo_opvtrans" />
+
+<LinearLayout
+    android:id="@+id/carasC"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/grid"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="32dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/carasUtiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ideal Para las Caras"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/carasCompatibles"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="36dp"
+        android:layout_toRightOf="@+id/nombreProducto" >
+    </LinearLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/grid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/imagenProducto"
+    android:layout_toRightOf="@+id/imagenProducto"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/specs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/marcaProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="29dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/materialProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="29dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/colorProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="29dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/formaProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="29dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/specs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/precioProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="29dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+<LinearLayout
+    android:id="@+id/linearStock"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="29dp" >
+        <TextView
+            android:id="@+id/stockProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+			android:layout_marginTop="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+        
+</LinearLayout>
+<LinearLayout
+    android:id="@+id/linearMedidas"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="29dp"
+    >
+        <TextView
+            android:id="@+id/medidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="15dp"
+            android:text="Ver Medidas"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

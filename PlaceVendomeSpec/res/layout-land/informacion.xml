@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_bottom" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="65dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cristales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/cristales"
+                android:text="Cristales"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/dioptrias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/dioptrias"
+                android:text="Dioptrías"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/marcos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/marcos"
+                android:text="Marcos"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/caras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:drawableTop="@drawable/caras"
+                android:text="Caras"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/marcas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/marcas"
+                android:text="Marcas"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/placeVendome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/placevendome"
+                android:text="Place Vendome"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/garantias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:background="#000000"
+                android:drawableTop="@drawable/garantias"
+                android:text="Garantías"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/herramientas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:drawableTop="@drawable/herramientas"
+                android:text="Herramientas"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
