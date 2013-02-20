@@ -9,7 +9,9 @@ import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
 import com.example.guardarSelecciones.Selecciones;
 import com.slidingmenu.lib.SlidingMenu;
+import com.slidingmenu.lib.SlidingMenu.OnCloseListener;
 import com.slidingmenu.lib.SlidingMenu.OnOpenListener;
+import com.slidingmenu.lib.SlidingMenu.OnOpenedListener;
 import com.slidingmenu.lib.app.SlidingActivity;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 
@@ -50,6 +52,8 @@ public class Preview extends SherlockActivity {
 	private static String descripcion;
 	private static SlidingMenu menu;
 	private static SlidingMenu menuLeft;
+	boolean menuOpen = false;
+	boolean menuLeftOpen = false;
 
 	
 	private Drawable resize(Drawable image) {
@@ -76,8 +80,12 @@ public class Preview extends SherlockActivity {
 		t.replace(R.id.productosCarro, CarritoCompras.newInstance());
 		t.replace(R.id.menuLeft, MenuLeft.newInstance());
 
+		Log.d("Sku Elegido", Selecciones.getSkuElegido());
+		
 		t.commit();
 		clicked = Selecciones.getSkuElegido();
+		
+		
 
 		// customize the SlidingMenu
 		//this.setSlidingActionBarEnabled(true);
@@ -93,7 +101,6 @@ public class Preview extends SherlockActivity {
         menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         menu.setShadowWidthRes(R.dimen.shadow_width);
         menu.setShadowDrawable(R.drawable.shadow);
-        
         menu.setBehindOffsetRes(R.dimen.actionbar_home_width);
         menu.setFadeDegree(0.25f);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
@@ -101,37 +108,154 @@ public class Preview extends SherlockActivity {
         
 		menuLeft = new SlidingMenu(this);
         menuLeft.setMode(SlidingMenu.LEFT);
-        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
+        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         menuLeft.setShadowWidthRes(R.dimen.shadow_width);
         menuLeft.setShadowDrawable(R.drawable.shadow);
-        
         menuLeft.setBehindOffsetRes(R.dimen.actionbar_home_width2);
         menuLeft.setFadeDegree(0.25f);
         menuLeft.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         menuLeft.setMenu(R.layout.menuleft);
-        menuLeft.setOnOpenListener(new OnOpenListener() {
-			
+        
+        
+        menu.setOnOpenedListener(new OnOpenedListener() {
+    		
 			@Override
-			public void onOpen() {
+			public void onOpened() {
 				// TODO Auto-generated method stub
-				if(menu.isMenuShowing()){
-				menu.toggle();
+				Log.d("Menu", "OPEN");
+
+		        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
+		        menuLeft.setSlidingEnabled(false);
+				
+				if(menuLeftOpen){
+				
+					Log.d("Menu", "Menu Is Open");
+					menu.showContent(false);
+					menuLeft.showContent(false);
+					menuOpen=false;
+					
+					
 				}
-			}
-		});
-        
-        
-        menu.setOnOpenListener(new OnOpenListener() {
-			
-			@Override
-			public void onOpen() {
-			
-				if(menuLeft.isMenuShowing()){
-					menuLeft.toggle();// TODO Auto-generated method stub
+				
+				else{
+					Log.d("Menu", "Menu Is Closed");
+					menuOpen=true;
+					
 				}
 				
 			}
 		});
+        
+        
+  menu.setOnOpenListener(new OnOpenListener() {
+    		
+			@Override
+			public void onOpen() {
+				// TODO Auto-generated method stub
+				Log.d("Menu", "OPEN");
+
+				if(menuLeftOpen){
+				
+					Log.d("Menu", "Menu Is Open");
+					menuOpen=false;
+					
+					
+				}
+				
+				else{
+					Log.d("Menu", "Menu Is Closed");
+					menuOpen=true;
+					
+				}
+				
+			}
+		});
+        
+        
+        menuLeft.setOnOpenListener(new OnOpenListener(){
+
+			@Override
+			public void onOpen() {
+				// TODO Auto-generated method stub
+				menuLeft.showMenu(false);
+				menu.setSlidingEnabled(true);
+			}
+        	
+        	
+        	
+        	
+        }
+        
+        		
+        		
+        		
+        		);
+        	
+        	
+        
+        
+        
+        menuLeft.setOnOpenedListener(new OnOpenedListener() {
+		
+			@Override
+			public void onOpened() {
+				// TODO Auto-generated method stub
+				Log.d("MenuLeft", "OPEN");
+				if(menuOpen){
+				
+					Log.d("MenuLeft", "Menu Is Open");
+					menuLeftOpen=false;
+
+					
+					
+				}
+				
+				else{
+					Log.d("MenuLeft", "Menu Is Closed");
+					menuLeftOpen=true;
+					
+				}
+				
+			}
+		});
+        
+        menuLeft.setOnCloseListener(new OnCloseListener(){
+
+			@Override
+			public void onClose() {
+				// TODO Auto-generated method stub
+				Log.d("MenuLeft", "Close");
+				menuLeftOpen=false;
+				menu.setSlidingEnabled(true);
+				
+			}
+        
+        		
+        		
+        		
+        });
+        
+        menu.setOnCloseListener(new OnCloseListener(){
+
+    			@Override
+    			public void onClose() {
+    				// TODO Auto-generated method stub
+    				Log.d("Menu", "Close");
+    		        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+    		        menuLeft.setSlidingEnabled(true);
+
+    				menuOpen=false;
+    				
+    			}
+            
+            		
+            		
+            		
+            });
+            
+        
+        
+        
         
         
         
@@ -142,7 +266,6 @@ public class Preview extends SherlockActivity {
 		bar.setIcon(R.drawable.home_icon_normal_invert);
 		bar.setHomeButtonEnabled(true);
 
-		Log.d("Clicked", clicked);
 		/*TEXT FORMAT AND ALL THAT SHIT */
 		
 		TextView nombreProducto = (TextView) findViewById(R.id.nombreProducto);
@@ -314,8 +437,23 @@ public class Preview extends SherlockActivity {
 			return true;
 			
 		case R.id.carro:
+			
+			
+			if(Selecciones.isSelected(clicked) || !menuOpen){
+				Log.d("Click Carro", "Entra");
+				if(menuOpen){
+					menu.showContent();
+				}
+				else{
+					menu.showMenu();
+					menuOpen = !menuOpen;
+
+				}
+				
+			}
+			
 			Selecciones.addModelo();
-			menu.toggle();
+			
 			
 			FragmentTransaction t = getFragmentManager().beginTransaction();
 			t.replace(R.id.productosCarro, CarritoCompras.newInstance());

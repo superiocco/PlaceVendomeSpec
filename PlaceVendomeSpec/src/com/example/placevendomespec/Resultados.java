@@ -98,6 +98,7 @@ public class Resultados extends SherlockActivity {
 			final Intent main = new Intent (this,MainActivity.class);
 			startActivity(main);
 			MainActivity.mSectionsPagerAdapter.setTrans(4);
+			MainActivity.ini=1;
 			finish();
 			
 			

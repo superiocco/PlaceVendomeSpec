@@ -18,7 +18,9 @@ import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.RelativeSizeSpan;
 import android.util.Log;
+import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
+import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -27,6 +29,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView.BufferType;
+import android.widget.Toast;
 
 @TargetApi(17)
 public class CarritoCompras extends Fragment {
@@ -34,14 +37,59 @@ public class CarritoCompras extends Fragment {
 
 	View v;
 	Modelo elegidos[];
+    private static final int SWIPE_MIN_DISTANCE = 120;
+    private static final int SWIPE_MAX_OFF_PATH = 250;
+    private static final int SWIPE_THRESHOLD_VELOCITY = 200;
+    private GestureDetector gestureDetector;
+    View.OnTouchListener gestureListener;
+	
 	
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		final View root = (View) inflater.inflate(R.layout.carrito, null);
 		v = root;
+		
+		gestureDetector = new GestureDetector(new MyGestureDetector());
+        gestureListener = new View.OnTouchListener() {
+            public boolean onTouch(View v, MotionEvent event) {
+                if(gestureDetector.onTouchEvent(event)){
+					int id = v.getId()-100;
+					Log.d("Swipe",Integer.toString(v.getId()));
+					Selecciones.removeModelo(elegidos[id].getSKU());
+					getSelecciones();
+					
+                }
+                
+                return true;
+            }
+        };
+		
 		getSelecciones();
 		return root;
+	}
+	
+	class MyGestureDetector extends SimpleOnGestureListener {
+        @Override
+        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+            try {
+                if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
+                    return false;
+                // right to left swipe
+                if(e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
+
+                	return true;
+                }  
+                
+                else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
+                	return true;
+                }
+            } catch (Exception e) {
+                // nothing
+            }
+            return false;
+        }
+           
 	}
 	
 	private Drawable resizeSmall(Drawable image){
@@ -102,6 +150,10 @@ public class CarritoCompras extends Fragment {
 					return true;
 				}
 			});
+			
+			producto[i].setOnTouchListener(gestureListener);
+
+			
 			final Intent preview = new Intent(getActivity(),Preview.class);
 			producto[i].setOnClickListener(new View.OnClickListener() {
 				

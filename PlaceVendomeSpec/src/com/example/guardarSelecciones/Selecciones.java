@@ -43,9 +43,19 @@ public class Selecciones {
 	
 		boolean selected=false;
 		int i;
+		Log.d("clicked", Sku);
+
+		if(modelosElegidos == null){
+			
+			return selected;
+			
+		}
+		
+		else{
+		
 		for(i=0;i<modelosElegidos.length;i++){
 			
-			if(sku.equals(modelosElegidos[i].getSKU())){
+			if(Sku.equals(modelosElegidos[i].getSKU())){
 				
 				selected=true;
 				
@@ -53,6 +63,7 @@ public class Selecciones {
 			
 		}
 		return selected;
+		}
 	}
 	
 	public static void removeModelo(String sku){
