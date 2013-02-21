@@ -60,12 +60,12 @@
 
 	<Button
 	    android:id="@+id/guardarReceta"
-	    android:layout_width="wrap_content"
+	    android:layout_width="50dp"
 	    android:layout_height="wrap_content"
 	    android:layout_above="@+id/imageView1"
 	    android:layout_alignRight="@+id/imageView2"
 	    android:layout_marginBottom="90dp"
-	    android:text="Ok" />
+	    android:text="OK" />
 
 		<LinearLayout
 		    android:id="@+id/pres"

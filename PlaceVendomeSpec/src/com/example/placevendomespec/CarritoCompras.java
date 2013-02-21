@@ -7,7 +7,9 @@ import com.example.guardarSelecciones.Selecciones;
 
 import android.annotation.TargetApi;
 import android.app.Fragment;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.DialogInterface.OnClickListener;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -32,7 +34,7 @@ import android.widget.TextView.BufferType;
 import android.widget.Toast;
 
 @TargetApi(17)
-public class CarritoCompras extends Fragment {
+public class CarritoCompras extends Fragment implements android.view.View.OnClickListener, OnLongClickListener {
 
 
 	View v;
@@ -53,15 +55,17 @@ public class CarritoCompras extends Fragment {
 		gestureDetector = new GestureDetector(new MyGestureDetector());
         gestureListener = new View.OnTouchListener() {
             public boolean onTouch(View v, MotionEvent event) {
+            	
                 if(gestureDetector.onTouchEvent(event)){
 					int id = v.getId()-100;
 					Log.d("Swipe",Integer.toString(v.getId()));
 					Selecciones.removeModelo(elegidos[id].getSKU());
 					getSelecciones();
+					return true;
 					
                 }
                 
-                return true;
+                return false;
             }
         };
 		
@@ -137,34 +141,12 @@ public class CarritoCompras extends Fragment {
 	        
 	        }
 			
-			producto[i].setOnLongClickListener(new View.OnLongClickListener() {
-				
-				@Override
-				public boolean onLongClick(View v) {
-					// TODO Auto-generated method stub
-					int id = v.getId()-100;
-					Log.d("Long Click",Integer.toString(v.getId()));
-					Selecciones.removeModelo(elegidos[id].getSKU());
-					getSelecciones();
-					
-					return true;
-				}
-			});
+			producto[i].setOnLongClickListener(CarritoCompras.this);
 			
 			producto[i].setOnTouchListener(gestureListener);
 
 			
-			final Intent preview = new Intent(getActivity(),Preview.class);
-			producto[i].setOnClickListener(new View.OnClickListener() {
-				
-				@Override
-				public void onClick(View v) {
-					// TODO Auto-generated method stub
-					int id = v.getId()-100;
-					Selecciones.setProductoElegido(elegidos[id]);
-					startActivity(preview);
-				}
-			});
+			producto[i].setOnClickListener(CarritoCompras.this);
 			
 			lay.addView(producto[i]);
 			
@@ -179,6 +161,29 @@ public class CarritoCompras extends Fragment {
 		
 		return new CarritoCompras();
 		
+	}
+
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		Intent preview = new Intent (getActivity(),Preview.class);
+		int id = v.getId()-100;
+		Selecciones.setProductoElegido(elegidos[id]);
+		startActivity(preview);
+		
+	}
+
+	@Override
+	public boolean onLongClick(View v) {
+		// TODO Auto-generated method stub
+		
+		int id = v.getId()-100;
+		Log.d("Long Click",Integer.toString(v.getId()));
+		Selecciones.removeModelo(elegidos[id].getSKU());
+		getSelecciones();
+		
+		return true;
 	}
 
 

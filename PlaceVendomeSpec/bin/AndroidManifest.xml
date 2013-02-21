@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.placevendomespec"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission
+          android:name="com.example.placevendomespec.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+        <uses-permission android:name="com.example.placevendomespec.permission.MAPS_RECEIVE"/>
+     <uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature
+  android:glEsVersion="0x00020000"
+  android:required="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+         <meta-data
+    android:name="com.google.android.maps.v2.API_KEY"
+    android:value="AIzaSyAMmkvS81Mp5k9LUvK26cPSBkaJprdHtIY"/>
+        
+        
+        <activity
+            android:name="com.example.placevendomespec.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Resultados" android:theme="@style/resultados"></activity>
+        <activity android:name="Caracteristicas"></activity>
+        <activity android:name="ResultadosFinales" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity android:name="Marca" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="Peso" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="Material"></activity>
+        <activity android:name="Colores" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="Diseno" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="Calidad" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:theme="@android:style/Theme.Holo.Light.DarkActionBar" android:name="Similares" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:theme="@android:style/Theme.Holo.Light.DarkActionBar" android:name="Preview"></activity>
+        <activity android:theme="@android:style/Theme.Holo.Light.DarkActionBar" android:name="Precio"></activity>
+        <activity android:name="Medidas" android:theme="@style/PopupThemeWhite"></activity>
+        <activity android:name="Info" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="Mensaje" android:theme="@style/PopupTheme"
+             android:windowActionBar="true"
+             android:windowNoTitle="false" ></activity>
+        <activity android:name="CompararResultados" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity android:name="ComparaArticulos" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity android:name="MapaStock"></activity>
+        <activity android:name="MenuActivity"></activity>
+        
+    </application>
+
+</manifest>

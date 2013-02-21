@@ -21,6 +21,7 @@ import android.app.Dialog;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.pm.FeatureInfo;
+import android.content.res.Configuration;
 import android.gesture.GestureOverlayView;
 import android.gesture.GestureOverlayView.OnGesturingListener;
 import android.graphics.Bitmap;
@@ -101,7 +102,6 @@ public class Preview extends SherlockActivity {
         menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         menu.setShadowWidthRes(R.dimen.shadow_width);
         menu.setShadowDrawable(R.drawable.shadow);
-        menu.setBehindOffsetRes(R.dimen.actionbar_home_width);
         menu.setFadeDegree(0.25f);
         menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         menu.setMenu(R.layout.carrito);
@@ -111,11 +111,21 @@ public class Preview extends SherlockActivity {
         menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
         menuLeft.setShadowWidthRes(R.dimen.shadow_width);
         menuLeft.setShadowDrawable(R.drawable.shadow);
-        menuLeft.setBehindOffsetRes(R.dimen.actionbar_home_width2);
         menuLeft.setFadeDegree(0.25f);
         menuLeft.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
         menuLeft.setMenu(R.layout.menuleft);
         
+        if(getResources().getConfiguration().orientation==Configuration.ORIENTATION_LANDSCAPE){
+        menu.setBehindOffsetRes(R.dimen.actionbar_home_width);
+        menuLeft.setBehindOffsetRes(R.dimen.actionbar_home_width2);
+        }
+        
+        else{
+        	
+            menu.setBehindOffsetRes(R.dimen.actionbar_home_vertical);
+            menuLeft.setBehindOffsetRes(R.dimen.actionbar_home_vertical2);	
+        }
+
         
         menu.setOnOpenedListener(new OnOpenedListener() {
     		
@@ -124,7 +134,6 @@ public class Preview extends SherlockActivity {
 				// TODO Auto-generated method stub
 				Log.d("Menu", "OPEN");
 
-		        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_NONE);
 		        menuLeft.setSlidingEnabled(false);
 				
 				if(menuLeftOpen){
@@ -153,6 +162,7 @@ public class Preview extends SherlockActivity {
 			public void onOpen() {
 				// TODO Auto-generated method stub
 				Log.d("Menu", "OPEN");
+				menuLeft.setSlidingEnabled(false);
 
 				if(menuLeftOpen){
 				
@@ -177,8 +187,7 @@ public class Preview extends SherlockActivity {
 			@Override
 			public void onOpen() {
 				// TODO Auto-generated method stub
-				menuLeft.showMenu(false);
-				menu.setSlidingEnabled(true);
+				menu.setSlidingEnabled(false);
 			}
         	
         	
@@ -200,6 +209,8 @@ public class Preview extends SherlockActivity {
 			@Override
 			public void onOpened() {
 				// TODO Auto-generated method stub
+				menu.setSlidingEnabled(false);
+
 				Log.d("MenuLeft", "OPEN");
 				if(menuOpen){
 				
