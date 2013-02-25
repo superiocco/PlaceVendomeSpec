@@ -61,8 +61,10 @@
         <activity android:name="CompararResultados" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
         <activity android:name="ComparaArticulos" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
         <activity android:name="MapaStock"></activity>
-        <activity android:name="MenuActivity"></activity>
+        <activity android:name="MenuCristales" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+        <activity android:name="MenuTratamiento" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
+  		        <activity android:name="MenuDioptrias" android:theme="@android:style/Theme.Holo.Light.DarkActionBar"></activity>
         
-    </application>
+        </application>
 
 </manifest>

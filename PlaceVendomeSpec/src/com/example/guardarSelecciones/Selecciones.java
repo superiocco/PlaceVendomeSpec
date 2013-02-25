@@ -19,7 +19,16 @@ public class Selecciones {
 	private static boolean[] elegidos; 
 	private static int cantidadElegidos=0;
 	private static Modelo[] modelosElegidos=null;
-
+	private static int tratamientoSelected=0;
+	public static int getTratamientoSelected() {
+		return tratamientoSelected;
+	}
+	public static void setTratamientoSelected(int tratamientoSelected) {
+		Selecciones.tratamientoSelected = tratamientoSelected;
+	}
+	public static void setModelosElegidos(Modelo[] modelosElegidos) {
+		Selecciones.modelosElegidos = modelosElegidos;
+	}
 	public static void setProductoElegido(Modelo modelo){
 		
 		Selecciones.setAroAltoElegido(modelo.getAroAlto());

@@ -99,7 +99,7 @@ public class Preview extends SherlockActivity {
 		
 		menu = new SlidingMenu(this);
         menu.setMode(SlidingMenu.RIGHT);
-        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
         menu.setShadowWidthRes(R.dimen.shadow_width);
         menu.setShadowDrawable(R.drawable.shadow);
         menu.setFadeDegree(0.25f);
@@ -108,7 +108,7 @@ public class Preview extends SherlockActivity {
         
 		menuLeft = new SlidingMenu(this);
         menuLeft.setMode(SlidingMenu.LEFT);
-        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menuLeft.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
         menuLeft.setShadowWidthRes(R.dimen.shadow_width);
         menuLeft.setShadowDrawable(R.drawable.shadow);
         menuLeft.setFadeDegree(0.25f);
